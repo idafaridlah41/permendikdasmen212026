@@ -50,29 +50,6 @@
 </head>
 <body class="antialiased selection:bg-blue-100 selection:text-blue-900">
 
-<!-- Chosen Palette: Warm Editorial Blue & Slate (Background: Slate-50, Primary: Dark Blue #1E3A8A, Secondary: Muted Teal #0D9488, Accent: Amber #D97706, Surface: White with subtle border #E2E8F0) -->
-
-<!-- Application Structure Plan:
-     1. Executive Header & Metrics Bar: Quick view of regulation metadata (Nomor, Tanggal, Pengundangan, Struktur Pasal) and overall SPMP concept.
-     2. Main Navigation Bar: Tabbed navigation (Landasan Hukum, 6 Prinsip Mutu, Dual-Sistem SPMI & SPME, Sistem Informasi & PBD, Peran Pemda, Implikasi & Rekomendasi).
-     3. Section 1: Landasan Yuridis & Legal Framework with interactive legal hierarchy cards.
-     4. Section 2: 6 Prinsip Utama Penjaminan Mutu with dynamic interactive detail expansion.
-     5. Section 3: Dual-Sistem (SPMI & SPME) Explorer - Step-by-step interactive SPMI cycle visualizer + Comparative Radar/Bar Chart + Detail Matrix.
-     6. Section 4: Data Integration & PBD Simulator - Interactive workflow showing Dapodik/Rapor Pendidikan integration and interactive scenario simulator for Data-Based Planning.
-     7. Section 5: Regional Government (Pemda) Roles & 4 Contextual Factors grid with interactive regional policy filter.
-     8. Section 6: Challenges & Strategic Recommendations Matrix - Interactive filter by Stakeholder (Sekolah, Pemda, Kementerian) and priority breakdown chart.
--->
-
-<!-- Visualization & Content Choices:
-     - SPMI 6-Step Cycle -> Interactive Process Explorer using styled HTML/CSS buttons and JS dynamic content injection (NO SVG/Mermaid) -> Intuitive step-by-step learning.
-     - SPMI vs SPME Comparison -> Chart.js Radar/Bar Chart (Canvas) + Filterable Table -> Clear multidimensional comparison.
-     - PBD Interactive Simulator -> Form/Dropdown Selector + Dynamic Output Card -> Hands-on understanding of Rapor Pendidikan to RKAS workflow.
-     - Stakeholder Action Filter -> Dynamic UI Filtering -> Quick extraction of actionable recommendations for specific target audiences.
-     - Confirmation: NO SVG graphics used. NO Mermaid JS used. All visual graphs rely on Chart.js HTML5 Canvas and CSS Flexbox/Grid structures.
--->
-
-<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-
 <!-- Header & Hero Section -->
 <header class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -1183,10 +1160,12 @@
         updatePbdSimulation();
         renderRecommendations();
     }); 
-    </script>
-    <!-- Bagian Footer / Kredit Pengembang -->
-    <footer style="text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #e0e0e0; color: #666; font-size: 14px;">
-        <p>Dikembangkan oleh <strong>Ida Faridlah</strong> | Portal Interaktif Permendikdasmen No. 21 Tahun 2026</p>
-    </footer>
+</script>
+
+<!-- Bagian Footer / Kredit Pengembang -->
+<footer style="text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #e0e0e0; color: #666; font-size: 14px;">
+    <p>Dikembangkan oleh <strong>Ida Faridlah</strong> | Portal Interaktif Permendikdasmen No. 21 Tahun 2026</p>
+</footer>
+
 </body>
 </html>
